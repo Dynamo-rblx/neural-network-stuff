@@ -1,27 +1,12 @@
 local _table = {}
 
 function _table.NewGrid(x, y, z)
-  local grid = {}
-  
-  if x then
-    grid.X = x
-    
-    for i=1, x, 1 do
-      grid[i] = 0;
-    end
-    
-    if y then
-      grid.Y = y
+  local grid: {number}
 
-      
+  grid.X, grid.Y, grid.Z = x or -1, y or -1, z or -1
 
-      if z then
-        grid.Z = z
-
-        
-      end
-      
-    end
+  if grid.X >= 0 then
+    grid = table.create()
   end
   
 end
