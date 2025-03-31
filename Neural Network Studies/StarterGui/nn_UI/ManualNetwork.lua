@@ -1,4 +1,13 @@
 -- @ScriptType: LocalScript
+--// SETTINGS
+local terminal = true
+
+if terminal then -- inside VSC
+	local grid_maker = require("TableManager.lua")
+
+
+else -- inside Roblox
+
 --// INSTANCES
 local oo = script.Parent:WaitForChild("1_1")
 local ot = script.Parent:WaitForChild("1_2")
@@ -207,3 +216,4 @@ to.Changed:Connect(Run)
 tt.Changed:Connect(Run)
 b1.Changed:Connect(Run)
 b2.Changed:Connect(Run)
+end

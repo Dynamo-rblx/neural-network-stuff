@@ -49,10 +49,8 @@ function _table.NewGrid(x, y, z)
     ["Z"] = z or -1
   }
 
-  if self.Size >= 0 then
+  if self.Size.X >= 0 then
     self.Grid = createGrid(self.Size)
-    
-
   end
   
   return self
