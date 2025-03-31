@@ -1,8 +1,8 @@
 -- @ScriptType: LocalScript
 --// SETTINGS
-local terminal = true
+local terminal = false
 
-if terminal then -- inside VSC
+if terminal then -- inside VSC | CANT GET IT TO RUN IN TERMINAL EVEN WITH LUA INSTALLED >:(
 	local grid_maker = require("TableManager.lua")
 
 
